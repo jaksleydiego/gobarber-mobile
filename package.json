@@ -28,6 +28,7 @@
     "react-navigation-stack": "^2.8.2",
     "react-navigation-tabs": "^2.9.0",
     "react-redux": "^7.2.1",
+    "react-toastify": "^6.0.8",
     "reactotron-react-js": "^3.3.7",
     "reactotron-react-native": "^5.0.0",
     "reactotron-redux": "^3.1.3",
