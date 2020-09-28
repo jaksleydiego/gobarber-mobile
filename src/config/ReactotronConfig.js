@@ -1,10 +1,12 @@
-import ReactoTron from 'reactotron-react-js';
+import ReactoTron from 'reactotron-react-native';
 import { reactotronRedux } from 'reactotron-redux';
 import reactotronSaga from 'reactotron-redux-saga';
+import AsyncStorage from '@react-native-community/async-storage';
 
 if (__DEV__) {
-  const tron = ReactoTron.configure()
-    .useReactNavive()
+  const tron = ReactoTron.setAsyncStorageHandler(AsyncStorage)
+    .configure()
+    .useReactNative()
     .use(reactotronRedux())
     .use(reactotronSaga())
     .connect();
